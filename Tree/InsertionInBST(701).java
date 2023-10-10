@@ -13,7 +13,8 @@
  *     }
  * }
  */
-class Solution {
+class Solution
+    {
     public TreeNode insertIntoBST(TreeNode root, int val)
     {
         if(root==null)
@@ -35,3 +36,5 @@ class Solution {
         return root;
     }
 }
+//TC=O(logN)
+//SC=O(1)
