@@ -2,6 +2,7 @@
 
 import java.util.List; // not 100% effcient
 import java.util.*;
+//TC=SC=O(n)
 public class Solution
 {
     public static void inorder(TreeNode root, List<Integer> arr)
@@ -41,6 +42,8 @@ public class Solution
 
 OR
 
+    //TC=O(N)
+    //SC=O(1)
   import java.util.ArrayList;
 import java.util.List;
 public class Solution
@@ -63,14 +66,14 @@ public class Solution
             else if(temp.data>key)
             {
                 //left subtree 
-                suc=temp.data;
+                suc=temp.data;//possible succ ho sakta hai kyu ki bada hai temp data 
                 temp=temp.left;
             }
 
             else
             {
                 //right subtree
-                pre=temp.data;
+                pre=temp.data;//possible pre ho sakta hai kyu ki chhota hai temp data 
                 temp=temp.right;
             }
         }
